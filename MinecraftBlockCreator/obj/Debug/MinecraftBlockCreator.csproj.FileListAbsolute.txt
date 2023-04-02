@@ -1,0 +1,12 @@
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\bin\Debug\MinecraftBlockCreator.exe.config
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\bin\Debug\MinecraftBlockCreator.exe
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\bin\Debug\MinecraftBlockCreator.pdb
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\bin\Debug\FileToVoxCore.dll
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\obj\Debug\MinecraftBlockCreator.csprojAssemblyReference.cache
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\obj\Debug\MinecraftBlockCreator.Properties.Resources.resources
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\obj\Debug\MinecraftBlockCreator.csproj.GenerateResource.cache
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\obj\Debug\MinecraftBlockCreator.csproj.CoreCompileInputs.cache
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\obj\Debug\MinecraftBlockCreator.csproj.CopyComplete
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\obj\Debug\MinecraftBlockCreator.exe
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\obj\Debug\MinecraftBlockCreator.pdb
+C:\Users\nlfer\source\repos\MinecraftBlockCreator\MinecraftBlockCreator\obj\Debug\MinecraftBlockCreator.Form1.resources
