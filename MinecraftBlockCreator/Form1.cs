@@ -93,6 +93,14 @@ namespace MinecraftBlockCreator {
                 foreach (string file in imageFileSelector.FileNames) {
                     selectedImages[index] = new Bitmap(Image.FromStream(File.OpenRead(file)));
                     fileNames[index] = Path.GetFileNameWithoutExtension(file);
+
+                    if (selectedImages[index].Width != 16 || selectedImages[index].Height != 16) {
+                        selectedImages = new Bitmap[1];
+                        fileNames = new string[1];
+
+                        MessageBox.Show("Loading canceled. Images aren't 16x16.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
                     index++;
                 }
 
@@ -103,9 +111,17 @@ namespace MinecraftBlockCreator {
 
             selectedImages = new Bitmap[1];
 
-            selectedFileLabel.Text = "Selected file: " + imageFileSelector.FileName;
-
             selectedImages[0] = new Bitmap(Image.FromStream(imageFileSelector.OpenFile()));
+
+            if (selectedImages[0].Width != 16 || selectedImages[0].Height != 16) {
+                selectedImages = new Bitmap[1];
+                fileNames = new string[1];
+
+                MessageBox.Show("Loading canceled. Images aren't 16x16.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            selectedFileLabel.Text = "Selected file: " + imageFileSelector.FileName;
 
             imagePreview.Image = selectedImages[0];
         }
@@ -159,7 +175,7 @@ namespace MinecraftBlockCreator {
                 }
             }
 
-            if (selectedImages.Length <= 0) {
+            if (selectedImages.Length <= 0 || selectedImages[0] == null) {
                 MessageBox.Show("No images loaded!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -241,8 +257,8 @@ namespace MinecraftBlockCreator {
                 uintPalette.Add(ColorToUInt(black));
             }
 
-            palette[0] = Color.FromArgb(255, 255, 0, 0);
-            uintPalette[0] = ColorToUInt(Color.FromArgb(255, 255, 0, 0));
+            palette[253] = Color.FromArgb(255, 255, 0, 0);
+            uintPalette[253] = ColorToUInt(Color.FromArgb(255, 255, 0, 0));
 
             Dictionary<Color, List<Vector2>> imagePalette = new Dictionary<Color, List<Vector2>>();
 
